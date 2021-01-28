@@ -17,5 +17,6 @@ module.exports = {
       .tap(options => {
         return options;
       });
+    config.resolve.alias.set("@", resolve("examples"));
   }
 };

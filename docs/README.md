@@ -1,12 +1,8 @@
 ---
 home: true
-navbar: false
-heroImage:
-actionText: Get Started →
+heroImage: /hero.png
+heroText: Blue UI
+tagline: 定制化 UI 组件
+actionText: 快速上手 →
 actionLink: views/guide/install.md
-footer: Inspired by Vase
 ---
-
-<ClientOnly>
-  <vs-home/>
-</ClientOnly>
