@@ -1,0 +1,72 @@
+{
+  "id": "1615238",
+  "name": "course-web",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "课程管理平台",
+  "glyphs": [
+    {
+      "icon_id": "662070",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "791870",
+      "name": "二维码",
+      "font_class": "ai-code",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "3541126",
+      "name": "排序",
+      "font_class": "paixu",
+      "unicode": "e7ae",
+      "unicode_decimal": 59310
+    },
+    {
+      "icon_id": "3640138",
+      "name": "编辑",
+      "font_class": "bianji1",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "6292934",
+      "name": "删  除",
+      "font_class": "shanchu",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "6447160",
+      "name": "编辑",
+      "font_class": "bianji2",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "7725965",
+      "name": "word",
+      "font_class": "word",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "10014275",
+      "name": "删 除",
+      "font_class": "shanchu1",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "10047330",
+      "name": "更多",
+      "font_class": "ziyuan",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    }
+  ]
+}
