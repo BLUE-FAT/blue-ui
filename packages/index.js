@@ -1,7 +1,7 @@
 import Button from "./button";
 
 import "./iconfont/iconfont.css";
-import "./iconfont/iconfont.js";
+// import "./iconfont/iconfont.js";
 // 存储组件列表
 const components = [Button];
 
