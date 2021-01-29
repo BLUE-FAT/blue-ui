@@ -1,4 +1,9 @@
 const path = require("path");
+
+function resolve(dir) {
+  return path.join(__dirname, dir);
+}
+
 module.exports = {
   pages: {
     index: {
@@ -18,5 +23,15 @@ module.exports = {
         return options;
       });
     config.resolve.alias.set("@", resolve("examples"));
+  },
+  css: {
+    loaderOptions: {
+      sass: {
+        prependData: `@import "~@/assets/css/common.sass"`
+      },
+      scss: {
+        prependData: `@import "~@/assets/css/common.scss";`
+      }
+    }
   }
 };

@@ -8,6 +8,7 @@ import "@/assets/css/element-variables.scss";
 
 Vue.config.productionTip = false;
 Vue.use(BlueUI);
+Vue.use(ElementUI);
 
 new Vue({
   render: h => h(App)

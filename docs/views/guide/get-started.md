@@ -1,24 +1,25 @@
 ---
-title: '快速上手'
+title: "快速上手"
 ---
 
 # 快速上手
 
 ```js
 // 全局注册
-import VaseUI from 'vase-ui';
-Vue.use(VaseUI, { router });
-import 'vase-ui/lib/vase-ui.css';
+import BlueUI from "blue-ui";
+import "blue-ui/lib/blue-ui.css";
+Vue.use(BlueUI);
+
 // 按需注册
-import { Button, KeepAlive } from 'vase-ui';
-Vue.use(Button).use(KeepAlive, { router });
+import { Button } from "blue-ui";
+Vue.use(Button);
 ```
 
 ```vue
 // 全局注册
 <template>
   <div id="app">
-    <vs-button type="primary">点击报名</vs-button>
+    <bl-button type="primary">点击报名</-button>
   </div>
 </template>
 
@@ -26,7 +27,3 @@ Vue.use(Button).use(KeepAlive, { router });
 export default {};
 </script>
 ```
-
-<ClientOnly>
-  <!-- <sakura-img/> -->
-</ClientOnly>

@@ -4,10 +4,7 @@ module.exports = {
   description: "Blue UI",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
-    nav: [
-      { text: "Home", link: "/" },
-      { text: "Github", link: "https://github.com/JohnYu588/vase-ui/" }
-    ],
+    // nav: [{ text: "Home", link: "/" }],
     sidebar: [
       {
         title: "开发指南",

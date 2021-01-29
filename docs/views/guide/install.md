@@ -1,13 +1,11 @@
 ---
-title: '安装'
+title: "安装"
 ---
 
 # 安装
 
 ```
-npm i -D vase-ui
+npm i blue-ui -S
+或者
+yarn add blue-ui
 ```
-
-<ClientOnly>
-  <!-- <sakura-gif/> -->
-</ClientOnly>
