@@ -7,4 +7,4 @@ actionText: 快速上手 →
 actionLink: views/guide/install.md
 ---
 
-![ ](/image/home.jpg)
+![ ](<$withBase('/image/home.jpg')>)
