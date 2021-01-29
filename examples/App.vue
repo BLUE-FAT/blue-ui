@@ -1,6 +1,10 @@
 <template>
   <div id="app">
     <h1 class="title">组件测试</h1>
+    <div>
+      <bl-button>默认</bl-button>
+      <bl-button type="warning">警告</bl-button>
+    </div>
   </div>
 </template>
 
