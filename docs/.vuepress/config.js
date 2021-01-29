@@ -4,18 +4,26 @@ module.exports = {
   description: "Blue UI",
   // head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
-    // nav: [{ text: "Home", link: "/" }],
+    nav: [{ text: "Home", link: "/" }],
     sidebar: [
       {
         title: "开发指南",
-        collapsable: true,
+        collapsable: false,
         children: ["views/guide/install.md", "views/guide/get-started.md"]
       },
       {
         title: "组件",
-        collapsable: true,
-        children: ["views/components/basic/"]
+        collapsable: false,
+        sidebarDepth: 0,
+        children: ["views/components/button"]
       }
     ]
-  }
+  },
+  head: [
+    ["script", { src: "https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" }],
+    ["script", { src: "https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js" }],
+    ["script", { src: "https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js" }],
+    ["script", { src: "https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js" }]
+  ],
+  plugins: ["demo-block"]
 };

@@ -21,7 +21,7 @@
 </template>
 <script>
 export default {
-  name: "VsButton",
+  name: "BlButton",
   props: {
     size: String,
     type: {
@@ -48,10 +48,10 @@ export default {
       type: String,
       default: ""
     },
-    buttonSize:{
+    buttonSize: {
       type: String,
       default: "default"
-    },
+    }
   },
   methods: {
     handleClick(e) {
