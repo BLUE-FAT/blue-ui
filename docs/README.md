@@ -7,4 +7,4 @@ actionText: 快速上手 →
 actionLink: views/guide/install.md
 ---
 
-![ ](<$withBase('/image/home.jpg')>)
+![ ](./.vuepress/public/image/home.jpg)
