@@ -12,6 +12,7 @@ Vue.use(BlueUI);
 
 // 按需注册
 import { Button } from "blue-ui";
+import "blue-ui/lib/blue-ui.css";
 Vue.use(Button);
 ```
 

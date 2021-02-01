@@ -1,10 +1,13 @@
 const path = require("path");
+const IS_PROD = ["production", "prod"].includes(process.env.NODE_ENV);
 
 function resolve(dir) {
   return path.join(__dirname, dir);
 }
 
 module.exports = {
+  runtimeCompiler: true, // 是否使用包含运行时编译器的 Vue 构建版本
+  productionSourceMap: !IS_PROD, // 生产环境的 source map
   pages: {
     index: {
       entry: "examples/main.js",
