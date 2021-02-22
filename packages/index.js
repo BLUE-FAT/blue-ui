@@ -1,7 +1,6 @@
 import Button from "./button";
+import "../assets/iconfont/iconfont.css";
 
-import "./iconfont/iconfont.css";
-// import "./iconfont/iconfont.js";
 // 存储组件列表
 const components = [Button];
 
@@ -20,8 +19,4 @@ if (typeof window !== "undefined" && window.Vue) {
   install(window.Vue);
 }
 export { Button };
-export default {
-  // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
-  version: "1.0.0",
-  install
-};
+export default { install };

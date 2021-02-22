@@ -1,27 +1,62 @@
 <template>
   <div id="app">
-    <h1 class="title">组件测试</h1>
-    <div>
-      <bl-button>默认</bl-button>
-      <bl-button type="warning">警告</bl-button>
-    </div>
+    <bl-echarts :option="option2" height="800px" />
+    <bl-button />
   </div>
 </template>
 
 <script>
 export default {
   name: "app",
+  data() {
+    return {
+      option: {
+        title: {
+          text: "某站点用户访问来源",
+          subtext: "纯属虚构",
+          left: "center"
+        },
+        tooltip: {
+          trigger: "item"
+        },
+        legend: {
+          orient: "vertical",
+          left: "left"
+        },
+        series: [
+          {
+            name: "访问来源",
+            type: "pie",
+            radius: "50%",
+            data: [
+              { value: 1048, name: "搜索引擎" },
+              { value: 735, name: "直接访问" },
+              { value: 580, name: "邮件营销" },
+              { value: 484, name: "联盟广告" },
+              { value: 300, name: "视频广告" }
+            ],
+            emphasis: {
+              itemStyle: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: "rgba(0, 0, 0, 0.5)"
+              }
+            }
+          }
+        ]
+      },
+      option2: {
+        series: [
+          {
+            type: "liquidFill",
+            data: [0.6, 0.5, 0.4, 0.3]
+          }
+        ]
+      }
+    };
+  },
   components: {}
 };
 </script>
 
-<style lang="scss">
-.title {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  line-height: 1.25;
-  color: rgb(176, 197, 215);
-  text-align: center;
-}
-</style>
+<style lang="scss"></style>

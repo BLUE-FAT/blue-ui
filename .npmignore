@@ -1,6 +1,5 @@
 # 忽略目录
 test/
-packages/
 public/
 docs/
 node_modules/

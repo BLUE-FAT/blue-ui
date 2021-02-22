@@ -4,27 +4,56 @@ title: "快速上手"
 
 # 快速上手
 
+### 完整引入
+
+在 main.js 中写入：
+
 ```js
-// 全局注册
 import BlueUI from "blue-ui";
 import "blue-ui/lib/blue-ui.css";
 Vue.use(BlueUI);
+```
 
-// 按需注册
+### 按需引入
+
+首先，安装 babel-plugin-import：
+
+```
+npm install babel-plugin-import -D
+```
+
+然后，将 .babelrc 修改为：
+
+```
+{
+  presets: ["@vue/cli-plugin-babel/preset"],
+  plugins: [
+    [
+      "import",
+      {
+        libraryName: "blue-ui",
+        libraryDirectory: "packages"
+      }
+    ]
+  ]
+}
+
+```
+
+接下来，如果你只希望引入部分组件，比如 Button，那么需要在 main.js 中写入以下内容：
+
+```js
 import { Button } from "blue-ui";
-import "blue-ui/lib/blue-ui.css";
 Vue.use(Button);
 ```
 
+### 使用方式
+
 ```vue
-// 全局注册
 <template>
   <div id="app">
     <bl-button type="primary">点击报名</-button>
   </div>
 </template>
 
-<script>
-export default {};
-</script>
 ```

@@ -1,23 +1,8 @@
 <template>
-  <button
-    class="vs-button"
-    :disabled="disabled"
-    @click="handleClick"
-    :class="[
-      type ? `vs-button--${type}` : '',
-      buttonSize ? `vs-button--${buttonSize}` : '',
-      {
-        'is-plain': plain,
-        'is-round': round,
-        'is-circle': circle,
-        'is-disabled': disabled
-      }
-    ]"
-  >
-    <i :class="icon" v-if="icon"></i>
-    <!-- 如果没有传入插槽的时候才显示 -->
-    <span v-if="$slots.default"><slot></slot></span>
-  </button>
+  <div>
+    <el-button type="warning" class="bl-button"></el-button>
+    <el-button type="info"></el-button>
+  </div>
 </template>
 <script>
 export default {
@@ -60,8 +45,8 @@ export default {
   }
 };
 </script>
-<style lang="scss">
-.vs-button {
+<style>
+.bl-button {
   display: inline-block;
   line-height: 1;
   white-space: nowrap;

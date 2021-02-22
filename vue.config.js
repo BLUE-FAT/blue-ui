@@ -15,6 +15,25 @@ module.exports = {
       filename: "index.html"
     }
   },
+  configureWebpack: () => {
+    if (process.env.NODE_ENV === "production") {
+      return {
+        externals: {
+          vue: "Vue",
+          vuex: "Vuex",
+          "vue-router": "VueRouter",
+          "element-ui": "ELEMENT",
+          echarts: "echarts",
+          moment: "moment",
+          xlsx: "xlsx",
+          jquery: "jquery",
+          axios: "axios",
+          "echarts-liquidfill/src/liquidFill.js": "echarts-liquidfill/src/liquidFill.js"
+        }
+      };
+    }
+  },
+
   chainWebpack: config => {
     config.module
       .rule("js")
