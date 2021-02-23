@@ -5,7 +5,7 @@
 
 ```html
 <template>
-  <bl-container title="详情"> 正文 </bl-container>
+  <bl-container title="标题"> 正文 </bl-container>
 </template>
 <script>
   export default {
@@ -23,7 +23,7 @@
 
 ```html
 <template>
-  <bl-container title="详情" :mark="false"> 正文 </bl-container>
+  <bl-container title="标题" :mark="false"> 正文 </bl-container>
 </template>
 <script>
   export default {
@@ -41,7 +41,7 @@
 
 ```html
 <template>
-  <bl-container title="详情">
+  <bl-container title="标题">
     <template #crumb>
       <el-breadcrumb>
         <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>

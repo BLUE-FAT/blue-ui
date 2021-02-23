@@ -4,16 +4,8 @@
 
 ```html
 <template>
-  <!-- <bl-title title="详情" /> -->
-  <div>详情</div>
+  <bl-title title="标题" />
 </template>
-<script>
-  export default {
-    data() {
-      return {};
-    }
-  };
-</script>
 ```
 
 :::
