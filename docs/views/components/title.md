@@ -6,6 +6,13 @@
 <template>
   <bl-title title="详情" />
 </template>
+<script>
+  export default {
+    data() {
+      return {};
+    }
+  };
+</script>
 ```
 
 :::

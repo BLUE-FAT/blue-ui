@@ -7,6 +7,13 @@
 <template>
   <bl-container title="详情"> 正文 </bl-container>
 </template>
+<script>
+  export default {
+    data() {
+      return {};
+    }
+  };
+</script>
 ```
 
 :::
@@ -18,6 +25,13 @@
 <template>
   <bl-container title="详情" :mark="false"> 正文 </bl-container>
 </template>
+<script>
+  export default {
+    data() {
+      return {};
+    }
+  };
+</script>
 ```
 
 :::
@@ -37,6 +51,13 @@
     正文
   </bl-container>
 </template>
+<script>
+  export default {
+    data() {
+      return {};
+    }
+  };
+</script>
 ```
 
 :::

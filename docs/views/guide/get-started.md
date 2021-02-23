@@ -53,8 +53,7 @@ Vue.use(Button);
 ```vue
 <template>
   <div id="app">
-    <bl-button type="primary">点击报名</-button>
+    <bl-title title="详情" />
   </div>
 </template>
-
 ```
