@@ -1,0 +1,25 @@
+@import "common/var";
+.bl-container {
+  padding: 15px;
+  background: #fff;
+
+  .bl-breadcrumb {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1;
+  }
+  .bl-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    .bl-title-mark {
+      background-color: $--theme-color;
+      width: 4px;
+      height: 18px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+}

@@ -5,7 +5,8 @@ module.exports = {
       "import",
       {
         libraryName: "blue-ui",
-        libraryDirectory: "packages"
+        libraryDirectory: "packages",
+        styleLibraryDirectory: "packages/theme-chalk"
       }
     ]
   ]

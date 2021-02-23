@@ -15,7 +15,7 @@ module.exports = {
         title: "组件",
         collapsable: false,
         sidebarDepth: 0,
-        children: ["views/components/button"]
+        children: ["views/components/container", "views/components/title"]
       }
     ]
   },

@@ -32,7 +32,8 @@ npm install babel-plugin-import -D
       "import",
       {
         libraryName: "blue-ui",
-        libraryDirectory: "packages"
+        libraryDirectory: "packages",
+        styleLibraryDirectory: "packages/theme-chalk"
       }
     ]
   ]
