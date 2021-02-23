@@ -4,7 +4,8 @@
 
 ```html
 <template>
-  <bl-title title="详情" />
+  <!-- <bl-title title="详情" /> -->
+  <div>详情</div>
 </template>
 <script>
   export default {
