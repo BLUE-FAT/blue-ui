@@ -9,8 +9,8 @@ title: "快速上手"
 在 main.js 中写入：
 
 ```js
-import BlueUI from "blue-ui";
-import "blue-ui/lib/blue-ui.css";
+import BlueUI from "@blue_fat/blue-ui";
+import "@blue_fat/blue-ui/lib/blue-ui.css";
 Vue.use(BlueUI);
 ```
 
@@ -31,7 +31,7 @@ npm install babel-plugin-import -D
     [
       "import",
       {
-        libraryName: "blue-ui",
+        libraryName: "@blue_fat/blue-ui",
         libraryDirectory: "packages",
         styleLibraryDirectory: "packages/theme-chalk"
       }
@@ -44,7 +44,7 @@ npm install babel-plugin-import -D
 接下来，如果你只希望引入部分组件，比如 Button，那么需要在 main.js 中写入以下内容：
 
 ```js
-import { Button } from "blue-ui";
+import { Button } from "@blue_fat/blue-ui";
 Vue.use(Button);
 ```
 
