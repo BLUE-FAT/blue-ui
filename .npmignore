@@ -1,5 +1,5 @@
 # 忽略目录
-test/
+examples/
 public/
 docs/
 node_modules/
