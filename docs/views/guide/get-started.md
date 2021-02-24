@@ -44,8 +44,8 @@ npm install babel-plugin-import -D
 接下来，如果你只希望引入部分组件，比如 Button，那么需要在 main.js 中写入以下内容：
 
 ```js
-import { Button } from "@blue_fat/blue-ui";
-Vue.use(Button);
+import { Title } from "@blue_fat/blue-ui";
+Vue.use(Title);
 ```
 
 ### 使用方式
