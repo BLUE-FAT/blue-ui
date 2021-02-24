@@ -1,7 +1,7 @@
 <template>
-  <div class="bl-title" v-if="title">
+  <div class="bl-title">
     <span class="bl-title-mark" v-if="mark"></span>
-    {{ title }}
+    <slot></slot>
   </div>
 </template>
 
@@ -9,7 +9,6 @@
 export default {
   name: "BlTitle",
   props: {
-    title: String,
     mark: {
       type: Boolean,
       default: true

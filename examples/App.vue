@@ -1,7 +1,15 @@
 <template>
   <div id="app">
-    <bl-echarts :option="option2" height="800px" />
-    <bl-button />
+    <bl-title>标题</bl-title>
+    <bl-container title="标题">
+      <template #crumb>
+        <el-breadcrumb>
+          <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+          <el-breadcrumb-item>详情</el-breadcrumb-item>
+        </el-breadcrumb>
+      </template>
+      正文
+    </bl-container>
   </div>
 </template>
 
@@ -42,14 +50,6 @@ export default {
                 shadowColor: "rgba(0, 0, 0, 0.5)"
               }
             }
-          }
-        ]
-      },
-      option2: {
-        series: [
-          {
-            type: "liquidFill",
-            data: [0.6, 0.5, 0.4, 0.3]
           }
         ]
       }
