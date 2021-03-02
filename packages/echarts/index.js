@@ -3,4 +3,9 @@ import Echarts from "./src/echarts.vue";
 Echarts.install = function(Vue) {
   Vue.component(Echarts.name, Echarts);
 };
+
+// 判断是否是直接引入文件
+if (typeof window !== "undefined" && window.Vue) {
+  Echarts.install(window.Vue);
+}
 export default Echarts;

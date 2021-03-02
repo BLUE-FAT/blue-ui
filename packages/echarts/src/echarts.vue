@@ -31,6 +31,9 @@ export default {
         this.myChart.setOption(newVal, true);
       },
       deep: true
+    },
+    height() {
+      this.resizeFuc();
     }
   },
   mounted() {

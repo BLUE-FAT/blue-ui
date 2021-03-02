@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <bl-title>标题</bl-title>
+    <bl-echarts :option="option" height="300px" />
     <bl-container title="标题">
       <template #crumb>
         <el-breadcrumb>
@@ -14,6 +15,10 @@
 </template>
 
 <script>
+import Echarts from "../packages/echarts";
+import Vue from "vue";
+Vue.use(Echarts);
+
 export default {
   name: "app",
   data() {
@@ -54,8 +59,7 @@ export default {
         ]
       }
     };
-  },
-  components: {}
+  }
 };
 </script>
 
