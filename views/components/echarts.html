@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Echarts 图表组件 | Blue UI</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+    <meta name="description" content="Blue UI">
+    
+    <link rel="preload" href="/blue-ui/assets/css/0.styles.8dfa6d7d.css" as="style"><link rel="preload" href="/blue-ui/assets/js/app.1baec80a.js" as="script"><link rel="preload" href="/blue-ui/assets/js/2.6ddfde64.js" as="script"><link rel="preload" href="/blue-ui/assets/js/11.1630a082.js" as="script"><link rel="prefetch" href="/blue-ui/assets/js/10.f7b9e069.js"><link rel="prefetch" href="/blue-ui/assets/js/12.51cd8f52.js"><link rel="prefetch" href="/blue-ui/assets/js/13.307a1be9.js"><link rel="prefetch" href="/blue-ui/assets/js/14.86049620.js"><link rel="prefetch" href="/blue-ui/assets/js/3.3caf9db0.js"><link rel="prefetch" href="/blue-ui/assets/js/4.46e2780b.js"><link rel="prefetch" href="/blue-ui/assets/js/5.d9ca66ff.js"><link rel="prefetch" href="/blue-ui/assets/js/6.5bfa7461.js"><link rel="prefetch" href="/blue-ui/assets/js/7.998538ec.js"><link rel="prefetch" href="/blue-ui/assets/js/8.662f1b44.js"><link rel="prefetch" href="/blue-ui/assets/js/9.42ce3991.js">
+    <link rel="stylesheet" href="/blue-ui/assets/css/0.styles.8dfa6d7d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blue-ui/" class="home-link router-link-active"><!----> <span class="site-name">Blue UI</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blue-ui/" class="nav-link">
+  Home
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blue-ui/" class="nav-link">
+  Home
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>开发指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blue-ui/views/guide/install.html" class="sidebar-link">安装</a></li><li><a href="/blue-ui/views/guide/get-started.html" class="sidebar-link">快速上手</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blue-ui/views/components/container.html" class="sidebar-link">Container 布局容器</a></li><li><a href="/blue-ui/views/components/title.html" class="sidebar-link">Title 标题</a></li><li><a href="/blue-ui/views/components/echarts.html" aria-current="page" class="active sidebar-link">Echarts 图表组件</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="echarts-图表组件"><a href="#echarts-图表组件" class="header-anchor">#</a> Echarts 图表组件</h2> <div data-config="" data-type="vue" data-code="%3Ctemplate%3E%0A%20%20%3Cbl-echarts%20%3Aoption%3D%22option%22%20height%3D%22300px%22%20%2F%3E%0A%3C%2Ftemplate%3E%0A%0A%3Cscript%3E%0A%20%20%2F%2F%20%E8%AF%A5%E7%BB%84%E4%BB%B6%E4%B8%8D%E5%8C%85%E5%90%AB%E5%9C%A8%E5%AE%8C%E6%95%B4%E5%BC%95%E5%85%A5%E7%9A%84%E7%BB%84%E4%BB%B6%E4%B8%AD%EF%BC%8C%E9%9C%80%E8%A6%81%E8%87%AA%E5%B7%B1%E6%8C%89%E9%9C%80%E5%BC%95%E5%85%A5%0A%20%20%2F%2F%20import%20Echarts%20from%20%22%40blue_fat%2Fblue-ui%2Fpackages%2Fecharts%22%3B%0A%20%20%2F%2F%20import%20Vue%20from%20%22vue%22%3B%0A%20%20%2F%2F%20Vue.use(Echarts)%3B%0A%20%20export%20default%20%7B%0A%20%20%20%20data()%20%7B%0A%20%20%20%20%20%20return%20%7B%0A%20%20%20%20%20%20%20%20option%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20title%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20text%3A%20%22%E6%9F%90%E7%AB%99%E7%82%B9%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AE%E6%9D%A5%E6%BA%90%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20subtext%3A%20%22%E7%BA%AF%E5%B1%9E%E8%99%9A%E6%9E%84%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20left%3A%20%22center%22%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20tooltip%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20trigger%3A%20%22item%22%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20legend%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20orient%3A%20%22vertical%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20left%3A%20%22left%22%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20series%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20name%3A%20%22%E8%AE%BF%E9%97%AE%E6%9D%A5%E6%BA%90%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20type%3A%20%22pie%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20radius%3A%20%2250%25%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20data%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%20value%3A%201048%2C%20name%3A%20%22%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%22%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%20value%3A%20735%2C%20name%3A%20%22%E7%9B%B4%E6%8E%A5%E8%AE%BF%E9%97%AE%22%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%20value%3A%20580%2C%20name%3A%20%22%E9%82%AE%E4%BB%B6%E8%90%A5%E9%94%80%22%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%20value%3A%20484%2C%20name%3A%20%22%E8%81%94%E7%9B%9F%E5%B9%BF%E5%91%8A%22%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%20value%3A%20300%2C%20name%3A%20%22%E8%A7%86%E9%A2%91%E5%B9%BF%E5%91%8A%22%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20emphasis%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20itemStyle%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20shadowBlur%3A%2010%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20shadowOffsetX%3A%200%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20shadowColor%3A%20%22rgba(0%2C%200%2C%200%2C%200.5)%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%3B%0A%20%20%20%20%7D%0A%20%20%7D%3B%0A%3C%2Fscript%3E%0A" class="vuepress-plugin-demo-block__wrapper" style="display:none;"><div class="vuepress-plugin-demo-block__display"><div class="vuepress-plugin-demo-block__app"></div></div> <div class="vuepress-plugin-demo-block__code"><div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bl-echarts</span> <span class="token attr-name">:option</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>option<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>300px<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token comment">// 该组件不包含在完整引入的组件中，需要自己按需引入</span>
+  <span class="token comment">// import Echarts from &quot;@blue_fat/blue-ui/packages/echarts&quot;;</span>
+  <span class="token comment">// import Vue from &quot;vue&quot;;</span>
+  <span class="token comment">// Vue.use(Echarts);</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        option<span class="token operator">:</span> <span class="token punctuation">{</span>
+          title<span class="token operator">:</span> <span class="token punctuation">{</span>
+            text<span class="token operator">:</span> <span class="token string">&quot;某站点用户访问来源&quot;</span><span class="token punctuation">,</span>
+            subtext<span class="token operator">:</span> <span class="token string">&quot;纯属虚构&quot;</span><span class="token punctuation">,</span>
+            left<span class="token operator">:</span> <span class="token string">&quot;center&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          tooltip<span class="token operator">:</span> <span class="token punctuation">{</span>
+            trigger<span class="token operator">:</span> <span class="token string">&quot;item&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          legend<span class="token operator">:</span> <span class="token punctuation">{</span>
+            orient<span class="token operator">:</span> <span class="token string">&quot;vertical&quot;</span><span class="token punctuation">,</span>
+            left<span class="token operator">:</span> <span class="token string">&quot;left&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          series<span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              name<span class="token operator">:</span> <span class="token string">&quot;访问来源&quot;</span><span class="token punctuation">,</span>
+              type<span class="token operator">:</span> <span class="token string">&quot;pie&quot;</span><span class="token punctuation">,</span>
+              radius<span class="token operator">:</span> <span class="token string">&quot;50%&quot;</span><span class="token punctuation">,</span>
+              data<span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span> value<span class="token operator">:</span> <span class="token number">1048</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">&quot;搜索引擎&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span> value<span class="token operator">:</span> <span class="token number">735</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">&quot;直接访问&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span> value<span class="token operator">:</span> <span class="token number">580</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">&quot;邮件营销&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span> value<span class="token operator">:</span> <span class="token number">484</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">&quot;联盟广告&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span> value<span class="token operator">:</span> <span class="token number">300</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">&quot;视频广告&quot;</span> <span class="token punctuation">}</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+              emphasis<span class="token operator">:</span> <span class="token punctuation">{</span>
+                itemStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+                  shadowBlur<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+                  shadowOffsetX<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                  shadowColor<span class="token operator">:</span> <span class="token string">&quot;rgba(0, 0, 0, 0.5)&quot;</span>
+                <span class="token punctuation">}</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <div class="vuepress-plugin-demo-block__footer"></div></div> <h4 id="水波图"><a href="#水波图" class="header-anchor">#</a> 水波图</h4> <div data-config="" data-type="vue" data-code="%3Ctemplate%3E%0A%20%20%3Cbl-echarts%20%3Aoption%3D%22option%22%20height%3D%22300px%22%20%2F%3E%0A%3C%2Ftemplate%3E%0A%0A%3Cscript%3E%0A%20%20%2F%2F%20%E8%AF%A5%E7%BB%84%E4%BB%B6%E4%B8%8D%E5%8C%85%E5%90%AB%E5%9C%A8%E5%AE%8C%E6%95%B4%E5%BC%95%E5%85%A5%E7%9A%84%E7%BB%84%E4%BB%B6%E4%B8%AD%EF%BC%8C%E9%9C%80%E8%A6%81%E8%87%AA%E5%B7%B1%E6%8C%89%E9%9C%80%E5%BC%95%E5%85%A5%0A%20%20%2F%2F%20import%20Echarts%20from%20%22%40blue_fat%2Fblue-ui%2Fpackages%2Fecharts%22%3B%0A%20%20%2F%2F%20import%20Vue%20from%20%22vue%22%3B%0A%20%20%2F%2F%20Vue.use(Echarts)%3B%0A%20%20export%20default%20%7B%0A%20%20%20%20data()%20%7B%0A%20%20%20%20%20%20return%20%7B%0A%20%20%20%20%20%20%20%20option%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20series%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20type%3A%20%22liquidFill%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20data%3A%20%5B0.5%2C%200.4%2C%200.3%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20color%3A%20%5B%22red%22%2C%20%22%230f0%22%2C%20%22rgb(0%2C%200%2C%20255)%22%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20itemStyle%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20opacity%3A%200.6%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20emphasis%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20itemStyle%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20opacity%3A%200.9%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%3B%0A%20%20%20%20%7D%0A%20%20%7D%3B%0A%3C%2Fscript%3E%0A" class="vuepress-plugin-demo-block__wrapper" style="display:none;"><div class="vuepress-plugin-demo-block__display"><div class="vuepress-plugin-demo-block__app"></div></div> <div class="vuepress-plugin-demo-block__code"><div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bl-echarts</span> <span class="token attr-name">:option</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>option<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>300px<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token comment">// 该组件不包含在完整引入的组件中，需要自己按需引入</span>
+  <span class="token comment">// import Echarts from &quot;@blue_fat/blue-ui/packages/echarts&quot;;</span>
+  <span class="token comment">// import Vue from &quot;vue&quot;;</span>
+  <span class="token comment">// Vue.use(Echarts);</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        option<span class="token operator">:</span> <span class="token punctuation">{</span>
+          series<span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              type<span class="token operator">:</span> <span class="token string">&quot;liquidFill&quot;</span><span class="token punctuation">,</span>
+              data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0.5</span><span class="token punctuation">,</span> <span class="token number">0.4</span><span class="token punctuation">,</span> <span class="token number">0.3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+              color<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;red&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;#0f0&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;rgb(0, 0, 255)&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+              itemStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+                opacity<span class="token operator">:</span> <span class="token number">0.6</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              emphasis<span class="token operator">:</span> <span class="token punctuation">{</span>
+                itemStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+                  opacity<span class="token operator">:</span> <span class="token number">0.9</span>
+                <span class="token punctuation">}</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <div class="vuepress-plugin-demo-block__footer"></div></div> <p><font size="5">Attributes</font></p> <table><thead><tr><th style="text-align:left;">参数</th> <th>说明</th> <th>类型</th> <th>可选值</th> <th>默认值</th></tr></thead> <tbody><tr><td style="text-align:left;">option</td> <td>配置项</td> <td>参考 echart 文档</td> <td>-</td> <td>-</td></tr> <tr><td style="text-align:left;">height</td> <td>图表高度</td> <td>string</td> <td>-</td> <td>100%</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blue-ui/views/components/title.html" class="prev">
+        Title 标题
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blue-ui/assets/js/app.1baec80a.js" defer></script><script src="/blue-ui/assets/js/2.6ddfde64.js" defer></script><script src="/blue-ui/assets/js/11.1630a082.js" defer></script>
+  </body>
+</html>

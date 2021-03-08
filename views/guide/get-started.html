@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>快速上手 | Blue UI</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+    <meta name="description" content="Blue UI">
+    
+    <link rel="preload" href="/blue-ui/assets/css/0.styles.8dfa6d7d.css" as="style"><link rel="preload" href="/blue-ui/assets/js/app.1baec80a.js" as="script"><link rel="preload" href="/blue-ui/assets/js/2.6ddfde64.js" as="script"><link rel="preload" href="/blue-ui/assets/js/13.307a1be9.js" as="script"><link rel="prefetch" href="/blue-ui/assets/js/10.f7b9e069.js"><link rel="prefetch" href="/blue-ui/assets/js/11.1630a082.js"><link rel="prefetch" href="/blue-ui/assets/js/12.51cd8f52.js"><link rel="prefetch" href="/blue-ui/assets/js/14.86049620.js"><link rel="prefetch" href="/blue-ui/assets/js/3.3caf9db0.js"><link rel="prefetch" href="/blue-ui/assets/js/4.46e2780b.js"><link rel="prefetch" href="/blue-ui/assets/js/5.d9ca66ff.js"><link rel="prefetch" href="/blue-ui/assets/js/6.5bfa7461.js"><link rel="prefetch" href="/blue-ui/assets/js/7.998538ec.js"><link rel="prefetch" href="/blue-ui/assets/js/8.662f1b44.js"><link rel="prefetch" href="/blue-ui/assets/js/9.42ce3991.js">
+    <link rel="stylesheet" href="/blue-ui/assets/css/0.styles.8dfa6d7d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blue-ui/" class="home-link router-link-active"><!----> <span class="site-name">Blue UI</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blue-ui/" class="nav-link">
+  Home
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blue-ui/" class="nav-link">
+  Home
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>开发指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blue-ui/views/guide/install.html" class="sidebar-link">安装</a></li><li><a href="/blue-ui/views/guide/get-started.html" aria-current="page" class="active sidebar-link">快速上手</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blue-ui/views/components/container.html" class="sidebar-link">Container 布局容器</a></li><li><a href="/blue-ui/views/components/title.html" class="sidebar-link">Title 标题</a></li><li><a href="/blue-ui/views/components/echarts.html" class="sidebar-link">Echarts 图表组件</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="快速上手"><a href="#快速上手" class="header-anchor">#</a> 快速上手</h1> <h3 id="完整引入"><a href="#完整引入" class="header-anchor">#</a> 完整引入</h3> <p>在 main.js 中写入：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> BlueUI <span class="token keyword">from</span> <span class="token string">&quot;@blue_fat/blue-ui&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;@blue_fat/blue-ui/lib/blue-ui.css&quot;</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>BlueUI<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="按需引入"><a href="#按需引入" class="header-anchor">#</a> 按需引入</h3> <p>首先，安装 babel-plugin-import：</p> <div class="language- extra-class"><pre class="language-text"><code>npm install babel-plugin-import -D
+</code></pre></div><p>然后，将 .babelrc 修改为：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  presets: [&quot;@vue/cli-plugin-babel/preset&quot;],
+  plugins: [
+    [
+      &quot;import&quot;,
+      {
+        libraryName: &quot;@blue_fat/blue-ui&quot;,
+        libraryDirectory: &quot;packages&quot;,
+        styleLibraryDirectory: &quot;packages/theme-chalk&quot;
+      }
+    ]
+  ]
+}
+
+</code></pre></div><p>接下来，如果你只希望引入部分组件，比如 Button，那么需要在 main.js 中写入以下内容：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> Title <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@blue_fat/blue-ui&quot;</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Title<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="使用方式"><a href="#使用方式" class="header-anchor">#</a> 使用方式</h3> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bl-title</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>详情<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blue-ui/views/guide/install.html" class="prev">
+        安装
+      </a></span> <span class="next"><a href="/blue-ui/views/components/container.html">
+        Container 布局容器
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blue-ui/assets/js/app.1baec80a.js" defer></script><script src="/blue-ui/assets/js/2.6ddfde64.js" defer></script><script src="/blue-ui/assets/js/13.307a1be9.js" defer></script>
+  </body>
+</html>
