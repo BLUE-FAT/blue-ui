@@ -1,12 +1,12 @@
 import "../assets/iconfont/iconfont.css";
 import "./theme-chalk/index.scss";
 
-import BreadNav from "./bread-nav";
+import Breadcrumb from "./breadcrumb";
 import Container from "./container";
 import Title from "./title";
 
 // 存储组件列表
-const components = [Title, Container, BreadNav];
+const components = [Title, Container, Breadcrumb];
 
 const install = function(Vue) {
   // 遍历注册全局组件
@@ -22,5 +22,5 @@ const install = function(Vue) {
 if (typeof window !== "undefined" && window.Vue) {
   install(window.Vue);
 }
-export { Title, Container, BreadNav };
+export { Title, Container, Breadcrumb };
 export default { install };

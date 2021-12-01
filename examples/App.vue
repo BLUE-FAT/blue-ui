@@ -11,6 +11,7 @@
       </template>
       正文
     </bl-container>
+    <bl-breadcrumb :breadList="breadList" />
   </div>
 </template>
 
@@ -57,7 +58,11 @@ export default {
             }
           }
         ]
-      }
+      },
+      breadList: [
+        { name: "一级导航", to: "/" },
+        { name: "二级导航", click: () => this.$router.push("/") }
+      ]
     };
   }
 };

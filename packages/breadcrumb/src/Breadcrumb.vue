@@ -10,7 +10,7 @@
 </template>
 <script>
 export default {
-  name: "BlBreadNav",
+  name: "BlBreadcrumb",
   data() {
     return {};
   },

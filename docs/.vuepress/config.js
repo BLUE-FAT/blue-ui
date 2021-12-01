@@ -15,7 +15,7 @@ module.exports = {
         title: "布局组件",
         collapsable: false,
         sidebarDepth: 0,
-        children: ["views/components/container", "views/components/title"]
+        children: ["views/components/container", "views/components/title", "views/components/breadcrumb"]
       },
       {
         title: "功能组件",
