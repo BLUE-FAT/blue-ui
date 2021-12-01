@@ -1,4 +1,5 @@
-import Echarts from "./src/echarts.vue";
+import Echarts from "./src/Echarts.vue";
+
 // 为组件提供 install 安装方法，供按需引入
 Echarts.install = function(Vue) {
   Vue.component(Echarts.name, Echarts);

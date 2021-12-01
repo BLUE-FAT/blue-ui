@@ -58,6 +58,48 @@
 
 :::
 
+#### 水波图
+
+::: demo
+
+```html
+<template>
+  <bl-echarts :option="option" height="300px" />
+</template>
+
+<script>
+  // 该组件不包含在完整引入的组件中，需要自己按需引入
+  // import Echarts from "@blue_fat/blue-ui/packages/echarts";
+  // import Vue from "vue";
+  // Vue.use(Echarts);
+  export default {
+    data() {
+      return {
+        option: {
+          series: [
+            {
+              type: "liquidFill",
+              data: [0.5, 0.4, 0.3],
+              color: ["red", "#0f0", "rgb(0, 0, 255)"],
+              itemStyle: {
+                opacity: 0.6
+              },
+              emphasis: {
+                itemStyle: {
+                  opacity: 0.9
+                }
+              }
+            }
+          ]
+        }
+      };
+    }
+  };
+</script>
+```
+
+:::
+
 <font size=5>Attributes</font>
 | 参数| 说明 | 类型 | 可选值 | 默认值 |
 | :------ | ------ | ------ | ------ | ------ |

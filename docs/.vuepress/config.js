@@ -12,10 +12,16 @@ module.exports = {
         children: ["views/guide/install.md", "views/guide/get-started.md"]
       },
       {
-        title: "组件",
+        title: "布局组件",
         collapsable: false,
         sidebarDepth: 0,
-        children: ["views/components/container", "views/components/title", "views/components/echarts"]
+        children: ["views/components/container", "views/components/title"]
+      },
+      {
+        title: "功能组件",
+        collapsable: false,
+        sidebarDepth: 0,
+        children: ["views/components/echarts"]
       }
     ]
   },

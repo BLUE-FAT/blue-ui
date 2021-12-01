@@ -1,0 +1,19 @@
+@import "common/var";
+
+.bl-nav-wrapper {
+  display: flex;
+  width: 300px;
+  margin-left: 40px;
+  font-size: 18px;
+  color: #fff;
+  vertical-align: middle;
+
+  div {
+    cursor: pointer;
+  }
+}
+
+.bl-breadcrumb {
+  line-height: 72px;
+  cursor: pointer;
+}
